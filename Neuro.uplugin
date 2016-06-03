@@ -1,0 +1,21 @@
+{
+  "FileVersion": 3,
+  "FriendlyName": "Neuro Networking",
+  "Version": 1,
+  "VersionName": "0.1",
+  "FriendlyVersion": "0.1",
+  "EngineVersion": "4.12",
+  "Description": "Networking plugin, which connects multiple UE4 game servers to create a large world.",
+  "Category": "Networking",
+  "CreatedBy": "Ryan M. Shetley",
+  "CreatedByURL": "http://github.com/schetle",
+  "EnabledByDefault": false,
+
+  "Modules" : 
+  [
+  	{
+    	"Name" : "Neuro",
+    	"Type" : "Runtime"
+  	}
+  ]
+}
