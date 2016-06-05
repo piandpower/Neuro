@@ -1,6 +1,9 @@
 #pragma once
 #include "Services/NeuroService.h"
 
+// TODO: Make UObject, so that methods can be exposed to blueprint
+// TODO: Make async
+
 // World Service: Not Async.
 
 class NeuroWorldService : public NeuroService {

@@ -1,5 +1,9 @@
 #pragma once
+#include <memory>
 #include "Neuro.generated.h"
+
+// TODO: Remove "ConnectToLoginServer()"
+// TODO: Add UPROPERTY() of LoginService, and WorldService
 
 UENUM(BlueprintType)
 enum class ENeuroConnectionMessage : uint8 {
@@ -31,5 +35,4 @@ class NEURO_API UNeuro : public UObject {
 
 	UPROPERTY(Config)
 	int32 WorldServerPort;
-
 };
