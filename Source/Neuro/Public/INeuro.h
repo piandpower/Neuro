@@ -6,7 +6,7 @@
  * The public interface to this module.  In most cases, this interface is only public to sibling modules 
  * within this plugin.
  */
-class INeuroPlugin : public IModuleInterface
+class INeuro : public IModuleInterface
 {
 
 public:
@@ -17,9 +17,9 @@ public:
 	 *
 	 * @return Returns singleton instance, loading the module on demand if needed
 	 */
-	static inline INeuroPlugin& Get()
+	static inline INeuro& Get()
 	{
-		return FModuleManager::LoadModuleChecked< INeuroPlugin >( "NeuroPlugin" );
+		return FModuleManager::LoadModuleChecked< INeuro >( "Neuro" );
 	}
 
 	/**
@@ -29,7 +29,7 @@ public:
 	 */
 	static inline bool IsAvailable()
 	{
-		return FModuleManager::Get().IsModuleLoaded( "NeuroPlugin" );
+		return FModuleManager::Get().IsModuleLoaded( "Neuro" );
 	}
 };
 
